@@ -1,8 +1,10 @@
-function formatMessage(message, maxLength) {
-    if (message.length <= maxLength) {
-        return message;
-    } else {
-        return message.slice(0, maxLength) + "...";
+function makeArray(firstArray, secondArray, maxLength) {
+ 
+    const newArray = firstArray.concat(secondArray);
+
+    if (newArray.length > maxLength) {
+        return newArray.slice(0, maxLength);
     }
+
+    return combinedArray;
 }
-console.log(formatMessage("Curabitur ligula sapien", 16)); // This will output something
