@@ -1,12 +1,13 @@
-'use strict';
+function filterArray(numbers, value) {
+    const result = [];  
+    
+    for (let i = 0; i < numbers.length; i++) {
+        if (numbers[i] > value) { 
 
-function checkForSpam(message) {
-
-    const lowerMessage = message.toLowerCase();
-
-    if (lowerMessage.includes("spam") || lowerMessage.includes("sale")) {
-        return true;
-    } 
-
-    return false;
+            result.push(numbers[i]);  
+        }
+    }
+    
+    return result;  // Zwracamy nową tablicę z pasującymi liczbami
 }
+
