@@ -8,6 +8,6 @@ function filterArray(numbers, value) {
         }
     }
     
-    return result;  // Zwracamy nową tablicę z pasującymi liczbami
+    return result;  
 }
 
